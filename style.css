@@ -1,0 +1,33 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+input[type=text] {
+    text-align: center;
+    width: 50px;
+}
+
+input[type=Button] {
+    text-align: center;
+}
+
+#opr {
+    border-color: rgb(188, 220, 228);
+    background-color: whitesmoke;
+    border-style: none;
+    text-align: center;
+}
+
+#forma {
+    background-color: whitesmoke;
+    margin: 0 37%;
+    border-radius: 5%;
+}
+
+h2 {
+    padding-top: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+
+        <div id="forma">
+            <h2>JavaScript kalkulator</h2>
+
+            <select id="opr">
+                <option value="sabiranje">Sabiranje</option>
+                <option value="oduzimanje">Oduzimanje</option>
+                <option value="mnozenje">Mnozenje</option>
+                <option value="deljenje">Deljenje</option>
+            </select>
+            <br><br>
+
+            Prvi broj: <input type = "text" id="n1" maxlength = "7"><br><br>
+            Drugi broj:  <input type = "text" id="n2" maxlength = "7"><br><br>
+            <input type = "Button" value = "Izracunaj" onclick="calc()"><br><br>
+            Rezultat: <input type = "text" id="result" maxlength = "7"><br><br>
+        </div>
+
+        <script>
+            function calc() {
+                var n1 = parseFloat(document.getElementById("n1").value)
+                var n2 = parseFloat(document.getElementById("n2").value)
+
+                var op = document.getElementById("opr").value
+
+                if (op === "sabiranje") {
+                    document.getElementById("result").value = n1+n2;
+                }
+                else if (op === "oduzimanje") {
+                    document.getElementById("result").value = n1-n2;
+                }
+                else if (op === "mnozenje") {
+                    document.getElementById("result").value = n1*n2;
+                }
+                else if (op === "deljenje") {
+                    document.getElementById("result").value = n1/n2;
+                }
+            }
+        </script>
+
+    </body>
+</html>
